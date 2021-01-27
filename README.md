@@ -1,14 +1,12 @@
 # Python-Workshop
 
 import time
-
 import random
-
 #from random_words import RandomWords
 
 #rw = RandomWords()
 
-name = raw_input("Hi there. Do you want to play Hangman with me? Y/N")
+name = raw_input("Hi there. Do you want to play Hangman with me? Y/N: ")
 
 print "I hope you said yes because that is all I'm programmed to know how to do!"
 
@@ -52,7 +50,7 @@ while turns > 0:
     print
 
     #ask for a guess
-    guess = raw_input("Guess a letter")
+    guess = raw_input("Guess a letter: ")
 
     guesses += guess
 
@@ -60,4 +58,12 @@ while turns > 0:
 
         turns -= 1
        # print "Wrong"
-        print "No pressure, you have", + turns, 'more guesses'
+        print "No pressure, you have", + turns, 'more guesses. You have tried:'
+        print guesses
+    
+        if turns == 0:
+            print "Oops, you lost."
+            print "The secret word was"
+            print word
+
+
