@@ -1,6 +1,9 @@
 # Python-Workshop
+
 import time
+
 import random
+
 #from random_words import RandomWords
 
 #rw = RandomWords()
